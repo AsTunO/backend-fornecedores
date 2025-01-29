@@ -1,0 +1,48 @@
+body {
+    background-color: #ffffff ;
+}
+
+#title {
+    padding-top: 50px;
+    color: #3968a7;
+    font-size: 25px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none;
+    z-index: 1; /* Make sure the tooltip appears above other elements */
+  }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #464663;;
+}
+
+* {
+  scrollbar-color: #464663 transparent;
+}
+
+#ToolBarContainer {
+  display: none;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}

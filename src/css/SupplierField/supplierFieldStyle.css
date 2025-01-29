@@ -1,0 +1,183 @@
+#ResultTitle {
+    padding-top: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#listInfoIndex {
+    padding-left: 50px;
+    color: transparent;
+}
+
+#completeSuppliersInfo {
+    font-weight:lighter;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+#ResultContainer {
+    height: auto; /* Manter a altura automática */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: #030303;
+    padding-bottom: 10px;   
+    overflow: hidden; /* Remove a barra de rolagem visível */
+}
+
+.EmptyMessageF {
+    background-color: #ffffff;
+}
+.EmptyMessageP {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 170px;
+    font-size: 20px;
+}
+
+#Result {
+    padding-bottom: 50px;
+}
+
+.serviceType {
+    width: 220px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+.cnpj, .name,.titlesCustom {
+    width: 220px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.titlesCustom {
+    font-weight: bold;
+    color: #020205;
+}
+
+#TitlesField{
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    width: 900px;
+}
+
+aside {
+    height: 400px;
+    width: 1000px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+aside::-webkit-scrollbar {
+    width: 105px; /* Reduza para uma barra mais fina */
+    background-color: #ffffff;
+    
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #4242F1; 
+}
+
+aside::-webkit-scrollbar-track { 
+    background-color: #e4d9d9;  
+    border: 1px solid #4242F1;
+}
+
+.supplierField {
+    background-color: #e3e3e7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-weight: 500;
+    font-size: small;
+    width: 900px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Estilos existentes para whitePanel */
+.white-panel {
+    /* ... */
+    position: absolute;
+    width: 380px;
+    height: auto;
+    /* ... */
+}
+
+.arrow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(32, 48, 90); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-50deg);
+    transition: transform 0.1s ease;
+}
+
+.arrow-button:hover::before {
+    transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.arrow-button:active::before {
+    transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.details-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 900px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.detail-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaçamento entre os detalhes */
+}
+
+.field,
+.value {
+    margin: 0; /* Remover margens padrão */
+    font-size: 14px; /* Tamanho da fonte */
+    line-height: 1.2; /* Espaçamento entre linhas */
+}
+
+.field {
+    flex-basis: 40%; /* Largura para o nome do campo */
+    font-weight: bold; /* Texto em negrito para o nome do campo */
+    color: rgb(32, 48, 90); 
+}
+
+.value {
+    flex-basis: 60%; /* Largura para o valor do campo */
+}

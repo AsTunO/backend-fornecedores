@@ -1,0 +1,128 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Preenche a altura total da viewport */
+    font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    opacity: 0;
+    transform: translateY(-50px) rotateX(20deg);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.container-login.show {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+/* Contêiner da imagem */
+.login-image-container {
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+    margin-bottom: 20px; /* Espaço entre a imagem e o título */
+}
+
+/* Imagem do login */
+.login-image {
+    width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Estilo para o título no formulário */
+#title-login {
+    font-size: 1.5rem;
+    text-align: center; /* Garante que o texto seja centralizado */
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif; /* Ou qualquer fonte que você preferir */
+    font-weight: bold; /* Deixa o texto em negrito */
+    max-width: 19ch;
+    margin-left: auto;  /* Garante centralização ao lado esquerdo */
+    margin-right: auto; /* Garante centralização ao lado direito */
+}
+
+/* Estilo para o formulário */
+.login-form {
+    width: 350px; /* Largura fixa */
+    padding: 30px; /* Espaçamento interno */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 5px rgba(233, 229, 229, 0.7); /* Sombra atrás do formulário */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Estilo dos campos de entrada */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button.login-button:hover {
+    background-color: #4b7aeb;
+}
+
+/* Estilo para o contêiner do botão do Google */
+.google-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* Estilo do botão Google */
+.google-button-container .g_id_signin {
+    border-radius: 10px; /* Borda arredondada */
+    background-color: transparent; /* Fundo transparente */
+    border: 4px solid #ececec; /* Borda fixa */
+    transition: all 0.3s ease; /* Suaviza a transição */
+    padding: 0px 0px; /* Ajuste do padding para garantir boa aparência */
+}
+
+/* Aplica a borda maior ao passar o mouse (hover) */
+.google-button-container .g_id_signin:hover {
+    border: 4px solid #b4b2b2; /* Borda maior e colorida ao passar o mouse */
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+/* Animação no hover do botão */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Animação no hover do botão */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.carousel-container {
+    height: 100%; /* Faz o carrossel preencher a altura da viewport */
+}

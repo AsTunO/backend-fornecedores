@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de entrada</title>
+    <link rel="icon" href="./imgs/icon 1.png" type="image/png">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/Header/headerStyle.css">
+    <link rel="stylesheet" href="./src/css/Footer/footerStyles.css">
+    <link rel="stylesheet" href="./src/css/Login/loginBody-styles.css">
+    <!-- Carregar a API do Google -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+<body>
+
+    <div class="container-fluid d-flex align-items-stretch">
+        <!-- Seção de Login -->
+        <div class="container-login col-6">
+            <form class="login-form">
+                <!-- Imagem acima do título -->
+                <div class="login-image-container">
+                    <img src="./imgs/LogoPD3.png" alt="Logo ou Imagem" class="login-image">
+                </div>
+                <!-- Título do Login dentro do formulário -->
+                <h1 id="title-login">Conectando inovação e oportunidades no ecossistema.</h1>
+                <!-- Botão de Login com Google -->
+                <div class="google-button-container">
+                    <div id="g_id_onload"
+                        data-client_id="142065600710-shfsnjb0nehk97d7otobkkbl7ck9jj7d.apps.googleusercontent.com"
+                        data-context="signin"
+                        data-ux_mode="redirect"
+                        data-login_uri="http://127.0.0.1:5500/src/mainPage.html"
+                        data-auto_prompt="false">                   
+                    </div>
+                    <div class="g_id_signin"
+                        data-type="standard" 
+                        data-shape="rectangular" 
+                        data-theme="outline" 
+                        data-text="continue_with"
+                        data-size="large" 
+                        data-logo_alignment="left">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Seção do Carrossel -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-container col-6" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner h-100">
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-100">
+                    <video class="d-block w-100 h-100" autoplay loop muted>
+                        <source src="./imgs/banner 4.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+            </div>
+        </div>               
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/functions/genericFunctions/autenticate.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>

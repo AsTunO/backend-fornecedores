@@ -1,0 +1,146 @@
+/* Estilo para o título da barra lateral */
+.sidebar-title {
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    font-weight: bold; /* Negrito para o título */
+}
+
+/* Remover fundo de todos os containers */
+#main, #Result, #ResultContainer, #content {
+    background: none; /* Remove o fundo */
+}
+
+/* Barra lateral fixa */
+#sidebar {
+    width: 250px; /* Ajuste conforme necessário */
+    height: 90vh; /* Mantém a altura ocupando toda a janela */
+    background-color: #d6def3; /* Cor de fundo do menu */
+    border-radius: 0px 0px 70px 70px; /* Arredondamento dos cantos (top-left, top-right, bottom-right, bottom-left) */
+    padding: 30px 40px; /* Reduz o padding superior e inferior para 10px e mantém os 20px nas laterais */
+    margin: 0; /* Remove a margem entre os links */
+    position: fixed;
+    top: 0;
+    left: 20px; /* Ajuste para mover a barra lateral para a direita */
+}
+
+/* Estilo para os links da barra lateral */
+#sidebar .nav-link {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px; /* Adiciona bordas arredondadas nos links */
+    transition: background-color 0.3s, border-radius 0.3s; /* Suaviza a transição */
+}
+
+#sidebar .nav-link:hover {
+    background-color: #495057;
+    border-radius: 10px; /* Mantém o arredondamento ao passar o mouse */
+}
+
+/* Centraliza o título e a imagem na barra lateral */
+.sidebar-title {
+    display: flex;               /* Usa o flexbox para fácil alinhamento */
+    justify-content: center;     /* Centraliza horizontalmente */
+    align-items: center;         /* Centraliza verticalmente */
+    height: 150px;               /* Ajuste conforme necessário para a altura da barra lateral */
+    padding: 10px 0;             /* Espaçamento dentro do contêiner */
+}
+
+/* Ajusta o tamanho da imagem */
+.sidebar-logo {
+    height: 100%;                /* Mantém a proporção da imagem */
+}
+
+
+
+
+
+/* Botões customizados no menu lateral */
+.ButtonType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    height: 65px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Arredonda as bordas dos botões */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.ButtonType:hover {
+    background-color: rgba(56, 102, 213, 0.1);
+    color: #3866d5;
+    box-shadow: 0 4px 8px rgba(56, 102, 213, 0.3);
+    border-radius: 10px; /* Mantém o arredondamento ao passar o mouse */
+}
+
+.ButtonType:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 48, 90);
+    border-radius: 10px; /* Mantém o arredondamento ao clicar */
+}
+
+/* Aplique o mesmo estilo em outras partes, se necessário */
+
+
+.clicked {
+    background-color: rgb(32, 48, 90); /* Cor ao selecionar */
+    color: white; /* Cor do texto ao selecionar */
+}
+
+/* Estilo para a imagem no final do menu lateral */
+#sidebarImageContainer {
+    margin: 20px 0; /* Espaçamento em cima e embaixo da imagem */
+    text-align: center; /* Centraliza a imagem */
+}
+
+#sidebarImageContainer img {
+    width: 80%; /* Tamanho da imagem */
+    height: auto; /* Manter proporção da imagem */
+}
+
+/* Ajuste do conteúdo à direita do menu */
+#content {
+    margin-left: 220px; /* Para que o conteúdo não fique embaixo da barra lateral */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Campo de Busca */
+#SearchField {
+    background-color: #ffffff; /* Cor de fundo do campo de busca */
+    height: 45px; /* Altura do campo de busca reduzida */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid #848485; /* Borda mais fina do campo de busca */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-left: 20px; /* Margem esquerda */
+}
+
+#Search {
+    height: 100%; /* Altura do campo de busca igual ao do contêiner */
+    border: none; /* Remove bordas */
+    outline: none; /* Remove contorno */
+    padding: 0 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+#SubmitButton {
+    height: 100%; /* Altura do botão igual ao do contêiner */
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Ajuste para o checkbox e texto ao lado */
+#TopInfo {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#completeSuppliersInfo {
+    margin-left: 10px; /* Espaçamento à esquerda do texto */
+}
