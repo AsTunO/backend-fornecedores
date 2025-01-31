@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Inicializa o botão de login do Google
     google.accounts.id.initialize({
-        client_id: "142065600710-shfsnjb0nehk97d7otobkkbl7ck9jj7d.apps.googleusercontent.com",
+        client_id: "423424600170-siq6j9atm3j9rrabkjljl1ko9c83d4s2.apps.googleusercontent.com",
         callback: handleCredentialResponse,
         auto_select: false, // Evita login automático
     });
