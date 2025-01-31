@@ -7,7 +7,7 @@ const {google} = require('googleapis');
 const cors = require('cors');  // Importando o CORS
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 // Habilitar CORS para todas as rotas
 app.use(cors());
